@@ -9,5 +9,3 @@ This repository primarily features an **unlabeled K-pop-related tweets dataset**
 *This dataset is used / to be used for academic research and educational purposes only!*
 
 *Please do not use for unintended purposes.*
-
-*Live, laugh, love kpop*
