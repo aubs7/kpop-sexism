@@ -16,27 +16,27 @@ The structure of this repo is as follows:
 ```text
 kpop-sexism/
 │
-├── 📁 datasets/                       # All datasets used in the project
-│   ├── 📁 for-training/               # Cleaned datasets for model training
-│   │   ├── 📄 train.csv               # 5,644 rows - cleaned training set
-│   │   ├── 📄 test.csv                # 2,208 - cleaned test set
-│   │   └── 📄 unlabeled.csv           # 10,782 rows – cleaned unlabeled data
+├── 📁 datasets/                                       # All datasets used in the project
+│   ├── 📁 for-training/                               # Cleaned datasets for model training
+│   │   ├── 📄 train.csv                               # 5,644 rows - cleaned training set
+│   │   ├── 📄 test.csv                                # 2,208 - cleaned test set
+│   │   └── 📄 unlabeled.csv                           # 10,782 rows – cleaned unlabeled data
 │   │
-│   └── 📁 unlabeled/                  # Raw scraped dataset
-│       └── 📄 final-scrape.csv        # 11,211 rows – raw data
+│   └── 📁 unlabeled/                                  # Raw scraped dataset
+│       └── 📄 final-scrape.csv                        # 11,211 rows – raw data
 │
-├── 📁 model/                          # Model files and training notebooks
-│   ├── 📄 baseline_model2.h5          # Baseline trained model
-│   ├── 📄 kpop-sexism-model2.h5       # Final trained model
-│   ├── 📄 tokenizer.pickle            # Tokenizer for preprocessing
-│   └── 📁 src/                        # Training notebooks and scripts
+├── 📁 model/                                          # Model files and training notebooks
+│   ├── 📄 baseline_model2.h5                          # Baseline trained model
+│   ├── 📄 kpop-sexism-model2.h5                       # Final trained model
+│   ├── 📄 tokenizer.pickle                            # Tokenizer for preprocessing
+│   └── 📁 src/                                        # Training notebooks and scripts
 │       ├── 📄 Baseline_Model_Training.ipynb
 │       └── 📄 SSL_Training.ipynb
 │
-├── 📁 web-extension/                  # Flask app and browser extension
-│   ├── 📄 app.py                      # Flask backend for real-time detection
-│   ├── 📄 preprocessing.py            # Preprocessing scripts for web input
-│   └── 📁 extension/                  # Browser extension (upload on Google Extensions)
+├── 📁 web-extension/                                  # Flask app and browser extension
+│   ├── 📄 app.py                                      # Flask backend for real-time detection
+│   ├── 📄 preprocessing.py                            # Preprocessing scripts for web input
+│   └── 📁 extension/                                  # Browser extension (upload on Google Extensions)
 │       ├── 📄 background.js
 │       ├── 📄 index.html
 │       ├── 📄 manifest.json
