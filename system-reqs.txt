@@ -1,0 +1,22 @@
+System Setup
+OS: Windows 10 Pro
+GPU: NVIDIA GeForce GTX 1650
+NVIDIA Driver Version: 572.47
+CUDA Version (System-wide): 12.8
+cuDNN Version (System-wide): 12.6
+
+
+Conda Environment
+Environment Name: tf-gpu
+Export File: tf_gpu.yml
+How to recreate:
+conda env create -f tf_gpu.yml
+conda activate tf-gpu
+
+Packages:
+Python: 3.9.18
+TensorFlow: 2.10.0
+TensorFlow-gpu: 2.6.0
+Keras: 2.10.0
+cudatoolkit: 11.3.1 (via conda)
+cudnn: 8.2.1 (via conda)

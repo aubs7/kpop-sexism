@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPOP Sexism Detector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <h1>Welcome to<br /><strong>KPOP SEXISM DETECTOR</strong></h1>
+
+      <div class="tabs">
+        <div class="tab active" id="websiteTab">For Reddit Links Only</div>
+      </div>
+
+      <!-- Input Sections -->
+      <div
+        class="input-section"
+        id="websiteInputContainer"
+        style="display: block"
+      >
+        <input
+          type="text"
+          placeholder="Paste reddit thread link here..."
+          id="websiteInput"
+        />
+      </div>
+
+      <!-- Scan Button -->
+      <button class="button" id="scanBtn">SCAN REDDIT</button>
+
+      <!-- Loading State -->
+      <div class="loading" id="loading">
+        <h2>Loading...</h2>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" id="progressBar"></div>
+        </div>
+      </div>
+
+      <!-- Result State -->
+      <div class="result" id="result">
+        <div class="text-placeholder">[Detected article text shown here]</div>
+        <div class="result-text">00.00% SEXIST</div>
+      </div>
+
+      <hr />
+      <footer>Beligan & Lasala (2025)</footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
