@@ -13,44 +13,53 @@ This repo primarily features an **unlabeled K-pop-related tweets dataset** for g
 
 The structure of this repo is as follows:
 
+```text
 kpop-sexism/
 │
-├── 📁 datasets/
-│   ├── 📁 for training/
-│   │   ├── 📄 train.csv
-│   │   ├── 📄 test.csv
-│   │   └── 📄 unlabeled.csv *(10,782 rows \\ clean)*
+├── 📁 datasets/                       # All datasets used in the project
+│   ├── 📁 for-training/               # Cleaned datasets for model training
+│   │   ├── 📄 train.csv               # 5,644 rows - cleaned training set
+│   │   ├── 📄 test.csv                # 2,208 - cleaned test set
+│   │   └── 📄 unlabeled.csv           # 10,782 rows – cleaned unlabeled data
 │   │
-│   └── 📁 unlabeled/
-│       └── 📄 final-scrape.csv *(11,211 rows \\ raw)*
+│   └── 📁 unlabeled/                  # Raw scraped dataset
+│       └── 📄 final-scrape.csv        # 11,211 rows – raw data
 │
-├── 📁 model/
-│   ├── 📁 src/
-│   │   ├── 📄 Baseline Model Training.ipynb
-│   │   ├── 📄 SSL Training.ipynb
-│   ├── 📄 baseline_model2.h5
-│   ├── 📄 kpop-sexism-model2.h5 *(final model)*
-│   └── 📄 tokenizer.pickle
+├── 📁 model/                          # Model files and training notebooks
+│   ├── 📄 baseline_model2.h5          # Baseline trained model
+│   ├── 📄 kpop-sexism-model2.h5       # Final trained model
+│   ├── 📄 tokenizer.pickle            # Tokenizer for preprocessing
+│   └── 📁 src/                        # Training notebooks and scripts
+│       ├── 📄 Baseline_Model_Training.ipynb
+│       └── 📄 SSL_Training.ipynb
 │
-├── 📁 web-extension/
-│   ├── 📄 app.py
-│   ├── 📄 preprocessing.py
-│   ├── 📁 extension/
-│   │   ├── background.js
-│   │   ├── index.html
-│   │   ├── manifest.json
-│   │   ├── script.js
-│   │   └── style.css
+├── 📁 web-extension/                  # Flask app and browser extension
+│   ├── 📄 app.py                      # Flask backend for real-time detection
+│   ├── 📄 preprocessing.py            # Preprocessing scripts for web input
+│   └── 📁 extension/                  # Browser extension (upload on Google Extensions)
+│       ├── 📄 background.js
+│       ├── 📄 index.html
+│       ├── 📄 manifest.json
+│       ├── 📄 script.js
+│       └── 📄 style.css
 │
-├── 📄 requirements.txt
-├── 📄 README.md
-└── 📄 Study in K-pop Sexism Detection.pdf
+├── 📄 system-reqs.txt               
+├── 📄 README.md                     
+└── 📄 Study_in_K-pop_Sexism_Detection.pdf 
+
+
+```
 
 ⋆｡°✩
+
+Notes:
+1. The web extension is designed to work only on **Reddit threads**.
+2. train.csv and test.csv contain English labeled data from the [EXIST 2021 dataset](https://nlp.uned.es/exist2021/) and manually annotated K-pop tweets, while unlabeled.csv contains unlabeled K-pop tweets only. They have been cleaned using preprocessing.py.
+3. Although preprocessing and data wrangling techniques were applied to clean the for-training/ datasets, some rows may still be messy or uncleaned.
 
 *This repository and its datasets are intended for academic and educational purposes only!*
 
 *Do not use the data, model, or outputs for any harmful, discriminatory, or unauthorized purposes.*
 
-*Happy coding*
+*Happy coding <3*
 
